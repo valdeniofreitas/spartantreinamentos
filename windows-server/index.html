@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="windows server, curso tecnico, admnistração de redes, curso de redes de computadores, servidor com windows, curso de servidores windows, curso de windows server">
+    <meta name="description" content="Aprenda a instalar e configurar servidores de rede baseados em tecnologia Microsoft Windows Server 2019. Nesse curso iremos como instalar e configurar os recursos principais recursos de redes utilizados em pequenas e médias empresas, tais como serviço de Active Directory, DNS, DHCP, GPOs, Backups e muito mais.">
+    <meta name="author" content="Valdenio Freitas">
+    <meta property="og:title" content="Formação Windows Server 2019" />
+    <meta property="og:url" content="https://spartantreinamentos.com.br/windows-server" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Aprenda a instalar e configurar servidores de rede baseados em tecnologia Microsoft Windows Server 2019. Nesse curso iremos como instalar e configurar os recursos principais recursos de redes utilizados em pequenas e médias empresas, tais como serviço de Active Directory, DNS, DHCP, GPOs, Backups e muito mais." />
+    <meta property="og:image" content="https://spartantreinamentos.com.br/windows-server/img/social.jpg" />
+    <meta property="og:site_name" content="Formação Windows Server 2019" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="img/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60202119-40"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-60202119-40');
+    </script>
+
+    <!-- HotMart Analytics -->
+    <script id="hotmart_launcher_script">
+        (function(l,a,u,n,c,h,e,r){l['HotmartLauncherObject']=c;l[c]=l[c]||function(){
+        (l[c].q=l[c].q||[]).push(arguments)},l[c].l=1*new Date();h=a.createElement(u),
+        e=a.getElementsByTagName(u)[0];h.async=1;h.src=n;e.parentNode.insertBefore(h,e)
+        })(window,document,'script','//launcher.hotmart.com/launcher.js','hot');
+
+        hot('account','3e8e4a68-5779-3ec2-81ad-4004acd3a263');
+    </script>
+
+    <!-- Google TAG -->
+    <!-- Global site tag (gtag.js) - Google Ads: 1049346796 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1049346796"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-1049346796');
+    </script>
+    <!-- Event snippet for Venda FWS conversion page -->
+    <script>
+            gtag('event', 'conversion', {
+                'send_to': 'AW-1049346796/KgrpCKT91KgBEOyFr_QD',
+                'transaction_id': ''
+            });
+      </script>
+
+
+
+    <!-- Facebook Pixel Code -->
+    <!-- <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '512913665941527');
+        fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=512913665941527&ev=PageView&noscript=1"
+      /></noscript> -->
+      <!-- End Facebook Pixel Code -->
+
+    <title>Formação Windows Server 2019</title>
+</head>
+<body onLoad="atualizaContador()">
+    <header class="header">
+        <img src="img/windows-server-2019.svg" alt="Windows Server 2019">
+    </header>
+    <div class="video-destaque">
+        <div>
+            <iframe src="https://www.youtube.com/embed/XSsbK1eScvM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <iframe src="https://www.youtube.com/embed/cLFIz8AAWqo?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>
+    </div>
+    <section class="sec-1">
+        <div class="titulo-b">
+            Curso completo de Windows Server 2019
+        </div>
+        <div class="titulo-d">
+            São mais de 8h de treinamento divididas em 15 módulos de muito conteúdo
+        </div>
+        <p>Veja como dominar o <strong>Microsoft Windows Server 2019</strong> e dar o pontapé inicial na sua carreira como <b>Administrador de Redes</b>.</p>
+        <p>Este treinamento traz uma visão geral sobre instalação, implementação e administração dos principais serviços de rede utilizados em pequenas e médias empresas que utilizam tecnologia <strong>Microsoft Windows Server</strong>. </p><p> Aprenda desde os princípios básicos para instalar e administrar o <strong>Windows Server </strong> até o conceitos mais avançados como políticas de grupo e triagem de arquivos. Conheça sobre gerenciamento de computadores, usuários, compartilhamentos de recursos, permissões, replicação e muito mais. </p>
+        <!-- <div class="timer">
+            <span>Fim das inscrições para <b>1º Turma</b> em </span> <br>
+            <span id="contador"></span>
+        </div> -->
+        <div class="btn-a">
+            <a href="#vendacard" >Quero Começar Agora</a>
+        </div>
+    </section>
+    <section class="sec-2 espacamento bg-2">
+        <div class="titulo-a">
+            Para quem é este curso
+        </div>
+        <div class="grid-2">
+            <div>
+                <ul>
+                    <li>Profissionais de TI;</li>
+                    <li>Técnicos e administradores de redes;</li>
+                    <li>Administradores de redes Linux que desejam conhecer os recursos do Windows Server;</li>
+                    <li>Profissionais ou iniciantes na área de infraestrutura;</li>
+                    <li>Pessoas que desejam iniciar seus estudos para certificações Microsoft;</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Iniciantes em administração de servidores;</li>
+                    <li>Estudantes de TI;</li>
+                    <li>Analistas de suporte em rede;</li>
+                    <li>Usuários de versões anteriores do Windows Server;</li>
+                    <li>Alunos do curso de montagem e manutenção de computadores;</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="sec-3">
+        <div>
+            <div class="titulo-a">Tenha uma profissão </div>
+            <div class="titulo-d">Seja um Administrador de Redes</div>
+            <p>O <b>Administrador de Redes</b> é o profissional responsável por atuar com desenvolvimento de soluções, administração de servidores e redes de dados em ambiente Data Center. Um Administrador de Redes atua no atendimento a usuários e configuração da estrutura de rede. Este é um dos profissionais mais requisitados e bem pagos do mercado de TI.<br><br>Com o curso de <strong>Windows Server</strong> você dará os primeiros passos na aprendizagem desta profissão.</p>
+        </div>
+        <div>
+            <img src="img/tenha-uma-profissao.png" alt="Tenha uma profissão">
+        </div>
+    </section>
+    <section class="sec-2 espacamento bg-2">
+        <div class="titulo-a">
+            O que irei aprender nesse curso?
+        </div>
+        <div class="grid-2">
+            <div>
+                <ul>
+                    <li>Conhecer o Windows Server e suas versões;</li>
+                    <li>Administrar servidores de rede baseados em Windows Server;</li>
+                    <li>Instalar e configurar o serviço de DNS;</li>
+                    <li>Instalar e configurar um servidor DHCP;</li>
+                    <li>Entender os conceitos de árvore e florestas do AD;</li>
+                    <li>Bloquear acesso a recursos do Windows;</li>
+                    <li>Montar um NameSpace para sua rede interna;</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Montar e administrar um Controlador de Domínio;</li>
+                    <li>Entender sobre permissões de usuário e grupos;</li>
+                    <li>Estruturar um ambiente seguro com GPOs;</li>
+                    <li>Instalar e configurar um servidor DFS;</li>
+                    <li>Instalar e configurar um servidor ADDS;</li>
+                    <li>Configurar um servidor de replicação de arquivos;</li>
+                    <li>Aumentar a segurança da sua rede interna;</li>
+                    <li>E muito mais.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="btn-a">
+            <a href="#vendacard">Quero Começar Agora</a>
+        </div>
+    </section>
+    <section class="ocurso">
+        <div class="titulo-a">
+            Conteúdo do Curso
+        </div>
+        <div class="conteudo">
+            <div class="titulo-c">Módulo 01</div>
+            <div class="box-conteudo">
+                <ul>
+                    <li>Apresentação do Curso</li>
+                    <li>Versões, preços e documentação do Windows Server 2019</li>
+                </ul>
+                <ul>
+                    <li>Download do Windows Server 2019</li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="titulo-c">Módulo 02</div>
+            <div class="box-conteudo">
+                <ul>
+                    <li>Baixando o VirtualBox</li>
+                    <li>Instalando o Windows Server 2019</li>
+                    <li>Instalando drivers do VirtualBox</li>
+                </ul>
+                <ul>
+                    <li>Ajustando a resolução </li>
+                    <li>Instalando Tradução</li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="titulo-c">Módulo 03</div>
+            <div class="box-conteudo">
+                <ul>
+                    <li>Criando passo a passo de instalação</li>
+                    <li>Definindo HostName, IP</li>
+                    <li>Conhecendo o Active Directory</li>
+                    <li>Conhecendo o serviço de DNS</li>
+                    <li>Instalando o Active Directory</li>
+                </ul>
+                <ul>
+                    <li>Promovendo servidor a Controlador de Domínio</li>
+                    <li>Configurando servidor DNS</li>
+                    <li>Mais alguns comando para o servidor DNS</li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="titulo-c">Módulo 04</div>
+            <div class="box-conteudo">
+                <ul>
+                    <li>Unidades Organizacionais</li>
+                </ul>
+                <ul>
+                    <li>Excluindo OUs protegidas</li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="titulo-c">Módulo 05</div>
+            <div class="box-conteudo">
+                <ul>
+                    <li>Conceito de Servidor DHCP</li>
+                    <li>Instalando e Configurando o servidor DHCP</li>
+                    <li>Criando intervalo de exclusão </li>
+                    <li>Configurando rede interna no VirtualBox</li>
+                </ul>
+                <ul>
+                    <li>Testando servidor DHCP</li>
+                    <li>Inserindo Gateway</li>
+                    <li>Criando reservas no servidor DHCP</li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="titulo-c">Módulo 06</div>
+            <div class="box-conteudo">
+                <ul>
+                    <li>Renomeando Terminais</li>
+                    <li>Ingressando Terminais no domínio</li>
+                    <li>Logando no Domínio</li>
+                </ul>
+                <ul>
+                    <li>Acessando terminal com usuário local</li>
+                    <li>Excluindo Usuário Local</li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="titulo-c">Módulo 07</div>
+            <div class="box-conteudo">
+                <ul>
+                    <li>Propriedades do Usuário</li>
+                    <li>Configurando Horário de Logon</li>
+                </ul>
+                <ul>
+                    <li>Limitando acesso por computador</li>
+                    <li>Perfil do Usuário salvo no servidor</li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="titulo-c">Módulo 08</div>
+            <div class="box-conteudo">
+                <ul>
+                    <li>Compartilhamento de Diretórios</li>
+                    <li>Acessando Diretórios Compartilhados</li>
+                    <li>Grupo de Usuários</li>
+                </ul>
+                <ul>
+                    <li>Mapeando Unidades de Rede</li>
+                    <li>Script de Logon</li>
+                    <li>Compartilhamento Oculto</li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="titulo-c">Módulo 09</div>
+            <div class="box-conteudo">
+                <ul>
+                    <li> File Server Resource Manager</li>
+                    <li>Modelo de Triagem de Arquivos</li>
+                </ul>
+                <ul>
+                    <li>Diretório de Triagem</li>
+                    <li>Definindo Cotas</li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="titulo-c">Módulo 10</div>
+            <div class="box-conteudo">
+                <ul>
+                    <li>Atualizando passo a passo</li>
+                </ul>
+                <ul>
+                    <li>Executando programas com Administrador</li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="titulo-c">Módulo 11</div>
+            <div class="box-conteudo">
+                <ul>
+                    <li>Backup do Windows Server</li>
+                    <li>Adicionando discos na sua VM</li>
+                    <li>Analisando diretórios e arquivos acessados por usuários</li>
+                </ul>
+                <ul>
+                    <li>Backup I</li>
+                    <li>Backup II</li>
+                    <li>Backup III</li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="titulo-c">Módulo 12</div>
+            <div class="box-conteudo">
+                <ul>
+                    <li>NIC Team</li>
+                    <li>Agrupamento de NIC I</li>
+                </ul>
+                <ul>
+                    <li>Agrupamento de NIC II</li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="titulo-c">Módulo 13</div>
+            <div class="box-conteudo">
+                <ul>
+                    <li>Diretivas de Grupo</li>
+                    <li>GPO - Proibindo Acesso ao Painel de Controle</li>
+                    <li>Testando GPO</li>
+                    <li>GPO - Atualizando Banco de Diretivas</li>
+                    <li>GPO - Definindo Papel de Parede</li>
+                </ul>
+                <ul>
+                    <li>GPO - Testando aplicação do Papel de Parede</li>
+                    <li>GPO - Bloqueando Aplicativos do Windows</li>
+                    <li>GPO - Bloqueando Prompt de Comando</li>
+                    <li>GPO - Criando Atalho nos Terminais</li>
+                    <li>GPO - Testando Atalho</li>
+                </ul>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="titulo-c">Módulo 14</div>
+            <div class="box-conteudo">
+                <ul>
+                    <li>DFS - Distributed File System</li>
+                    <li>Instalando DFS</li>
+                    <li>Criando NameSpace</li>
+                    <li>Criando Diretório de Replicação</li>
+                </ul>
+                <ul>
+                    <li>Criando Grupo de Replicação</li>
+                    <li>Testando Replicação</li>
+                    <li>Acessando NameSpace</li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="conteudo">
+                <div class="titulo-c">Módulo 15 (aulas ao vivo)</div>
+                <div class="box-conteudo">
+                    <ul>
+                        <li>Planejando sua infra-estrutura</li>
+                        <li>Documentando sua rede</li>
+                    </ul>
+                    <ul>
+                        <li>Hardware para Servidores</li>
+                    </ul>
+                </div>
+            </div> -->
+        <div class="conteudo">
+            <div class="titulo-c"> + Atualização de Conteúdos</div>
+        </div>
+    </section>
+    <!-- <section class="bonus">
+        <div class="grid-3">
+            <div>
+                <img src="img/bonus-box.svg" alt="Bonus">
+            </div>
+            <div class="titulo-b">Módulo Bonus *</div>
+            <p>
+                Aprenda em 4 passos como preparar propostas que podem aumentar suas chances de fechamento em <b>até 80%</b>.
+                <span>* Módulo grátis apenas para primeira turma.</span>
+            </p>
+        </div>
+    </section> -->
+    <section class="sec-2 bg-2 perguntas">
+        <div class="vquest">
+                <iframe src="https://www.youtube.com/embed/AKKQK591glo?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <!-- <iframe src="https://www.youtube.com/embed/XSsbK1eScvM?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  -->
+        </div>
+        <div class="titulo-a">
+            Perguntas frequentes
+        </div>
+        <div class="duvidas">
+            <div>
+                <div>
+                    <h2>Quando posso começar a estudar?</h2>
+                    <p>Assim que o seu pagamento for confirmado você recebe automaticamente os seus dados de acesso e em poucos minutos já estará assistindo as primeiras aulas.</p>
+                </div>
+                <div>
+                    <h2>Eu poderei tirar minhas dúvidas?</h2>
+                    <p>Sim! Temos uma área de membros onde você poderá tirar todas as suas dúvidas.</p>
+                </div>
+                <div>
+                    <h2>Quanto tempo levarei para ter resultados?</h2>
+                    <p>Tudo depende do seu empenho e da sua vontade de assistir as aulas e colocar em prática o que vou te ensinar dentro do curso. Em no máximo 3 semanas  você já terá experiência e habilidades para iniciar seus trabalhos.</p>
+                </div>
+                <div>
+                    <h2>Posso Compartilhar Meu Acesso Com Outras Pessoas?</h2>
+                    <p>Não, a plataforma reconhece o compartilhamento de ID e efetua o bloqueio automaticamente sem aviso prévio, pois isso é reconhecido como pirataria.</p>
+                </div>
+                <div>
+                    <h2>O Conteúdo do curso pode ser aplicado em outras versões do Windows Server?</h2>
+                    <p>Sim, a maioria dos recursos apresentados também funcional nas versões 2012 e 2016 do Windows Server.</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h2>Quanto tempo terei acesso às aulas?</h2>
+                    <p>O seu acesso é vitalício, ou seja, poderá acessar quando  e quantas vezes quiser. Dessa maneira você pode controlar o seu ritmo de estudo da maneira que achar melhor.</p>
+                </div>
+                <div>
+                    <h2>Tem Certificado?</h2>
+                    <p>Sim! Após a conclusão do curso será emitido um cerficado de 8 horas.</p>
+                </div>
+                <div>
+                    <h2>Como esse treinamento vai me ajudar?</h2>
+                    <p>Depende das suas metas e do seu empenho.
+                        Se você deseja trabalhar com Windows Server e ser valorizado por seus clientes as informações exclusivas do curso serão o melhor caminho para você seguir nesse exato momento.</p>
+                </div>
+                <div>
+                    <h2>E se eu não gostar do curso?</h2>
+                    <p>Fique tranquilo, garantimos 7 dias de garantia sobre o produto. Caso queira efetuar o reembolso basta encaminhar um e-mail para nossa equipe que devolvemos o seu investimento.</p>
+                </div>
+                <div>
+                    <h2>Como irá funcionar o conteúdo ao vivo?</h2>
+                    <p>Serão definidas datas para cada aula, essa data será informada com antecedencia para os membros da turma poderem se organizar.</p>
+                </div>
+            </div>
+        </div>
+        <div class="btn-a">
+            <a href="#vendacard">Quero Começar Agora</a>
+        </div>
+    </section>
+    <section class="garantia">
+        <div>
+            <img src="img/garantia.png" alt="garantia">
+        </div>
+        <div>
+            <div class="titulo-b">Satisfação Garantida ou <br>
+                    Seu Dinheiro de Volta</div>
+            <p>Se dentro do prazo de 7 dias você, não gostou do conteúdo, o conteúdo não está agregando valor na sua área profissional ou simplesmente por algum motivo você não quiser mais o curso, eu devolvo seu dinheiro de volta. Sem enrolação, basta só me mandar um e-mail.</p>
+        </div>
+    </section>
+    <section class="bonus frase">
+            <p> <i>É a sua dedicação hoje que vai determinar seu sucesso amanhã. <br> Estude, evolua, <b>invista em você!</b> </i> </p>
+    </section>
+    <section class=" depoimentos">
+        <div class="titulo-a">
+            Depoimentos
+        </div>
+        <ul>
+            <li>
+                <div>
+                    <img src="img/tales.png" alt="Depoimento Talles Mayk">
+                    <div>
+                        <h3>Talles Mayk</h3>
+                        <p>Curso muito bom, totalmente prático e sem enrolações. Já estava atuando na área quando iniciei o curso e com ele consegui aplicar novas técnicas em meu ambiente de trabalho. Ótimo para quem quer ampliar o conhecimento ou tentar uma nova profissão. Sem falar no professor que é referência na área tecnológica na região com uma boa bagagem de experiência e uma didática excelente!  </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/claudemir.png" alt="Depoimento Claudemir">
+                    <div>
+                        <h3>Claudemir Pereira</h3>
+                        <p>A Spartan e seus cursos têm uma metodologia de ensino revolucionária no meio tecnológico. Existe um conceito importante onde tudo que se teoriza se pratica. Isso é fantástico.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="img/user.svg" alt="Depoimento Gustavo Gama">
+                    <div>
+                        <h3>Gustavo Gama</h3>
+                        <p>Agregou bastante conhecimento. Aulas práticas e suporte muito bom durante todo o curso, todas as dúvidas são muito bem explicadas vale muito a pena o curso!</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="certificado">
+        <div>
+            <div class="titulo-b">Certificado </div>
+            <p>Após concluir o curso o aluno terá direito a um certificado de conclusão de <b>8 horas</b>.</p>
+        </div>
+        <div>
+            <img src="img/certificado.png" alt="Certificado">
+        </div>
+    </section>
+    <section class="instrutor bg-2">
+        <div class="titulo-a">
+            Sobre o instrutor
+        </div>
+        <div class="sobre-i">
+            <div>
+                <img src="img/valdenio-freitas.png" alt="Valdenio Freitas">
+            </div>
+            <div>
+                <h2>Valdenio Freitas</h2>
+                <p>Analista de Sistemas, possui experiência de mais de dez anos no mercado da Tecnologia da Informação, foi professor de diversas instituições de ensino. A ementa do curso foi desenvolvida baseada em necessidades do mercado de trabalho, focando em uma metodologia prática. Todo o treinamento é tanto para alunos que estão iniciando quanto para quem já atua na área.</p>
+            </div>
+        </div>
+    </section>
+    <div class="vendas">
+        <div>
+            <div class="titulo-b">Invista hoje em sua <br>
+                    Carreira Profissional</div>
+            <div class="titulo-e">E destaque-se no mercado de trabalho.</div>
+            <p>Sua entrada para uma das profissões mais bem remunerdas do mercado de TI.</p>
+            <p>Acesso vitalício a área de membros.</p>
+        </div>
+        <div id="vendacard">
+            <div class="titulo-d">
+                de
+            </div>
+            <div class="titulo-b riscado">
+              R$ <span> &nbsp; 480,00 &nbsp;  </span>
+            </div>
+            <div class="titulo-d">
+              por apenas <b>10x</b> de
+            </div>
+            <div class="titulo-b">
+                R$ <b>15,90</b>
+            </div>
+            <div class="titulo-d">
+                ou R$ <b>140,00</b> à vista
+            </div>
+            <div class="btn-a">
+                <a href="https://pay.hotmart.com/Q15523197T">Quero Começar Agora</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="action-whats" >
+        <a href="https://wa.me/5582999518585?text=Quero%20saber%20mais%20sobre%20Windows%20Server" target="_blank"><img src="img/whatsapp.svg" alt="Chamar no WhatsApp"></a>
+    </div>
+
+    <footer>
+        <a href="http://spartantreinamentos.com.br/" target="_blank"><img src="img/spartan-treinamentos.svg" alt=""></a>
+    </footer>
+    <script src="js/scroll.js"></script>
+    <script src="js/contador.js"></script>
+
+</body>
+</html>
